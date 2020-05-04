@@ -1,0 +1,23 @@
+Grafo
+Deo, N. (2017). Graph theory with applications to engineering and computer science. Courier Dover Publications.
+Trudeau, R. J. (2013). Introduction to graph theory. Courier Corporation.
+
+Dynamic Programming
+Hedetniemi, S., & Goodman, S. (1977). Introduction to the Design and Analysis of Algorithms. McGraw-Hill, New York.
+
+Gramatica
+Ginsburg, S. (1966). The Mathematical Theory of Context Free Languages.[Mit Fig.]. McGraw-Hill Book Company.
+Ginsburg, S., Greibach, S. A., & Harrison, M. A. (1967). Stack automata and compiling. Journal of the ACM (JACM), 14(1), 172-201.
+
+Suffix Array
+Kärkkäinen, J., & Sanders, P. (2003, June). Simple linear work suffix array construction. In International Colloquium on Automata, Languages, and Programming (pp. 943-955). Springer, Berlin, Heidelberg.
+
+Complejidad Computacional
+Papadimitriou, C. H. (2003). Computational complexity (pp. 260-265). John Wiley and Sons Ltd.
+Alsuwaiyel, M. H. (2016). Algorithms: Design Techniques And Analysis (Revised Edition) (Vol. 14). World Scientific.
+
+Geometria Computacional
+Preparata, F. P., & Shamos, M. I. (2012). Computational geometry: an introduction. Springer Science & Business Media.
+
+Data Structures
+Setiadi, Iskandar. (2012). Segment Tree for Solving Range Minimum Query Problems. 10.13140/2.1.4279.2643.

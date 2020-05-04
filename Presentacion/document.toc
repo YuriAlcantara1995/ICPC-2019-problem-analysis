@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.21pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{ICPC}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Problema}{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{Objetivo General}{12}{0}{1}
+\beamer@subsectionintoc {1}{4}{Objetivos Espec\IeC {\'\i }ficos}{13}{0}{1}
+\beamer@sectionintoc {2}{Problema E. Dead End Detector}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Descripci\IeC {\'o}n}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Soluci\IeC {\'o}n}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Complejidad Algor\IeC {\'\i }tmica}{27}{0}{2}
+\beamer@sectionintoc {3}{Problema D. Circular DNA}{28}{0}{3}
+\beamer@subsectionintoc {3}{1}{Descripci\IeC {\'o}n}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{Soluci\IeC {\'o}n}{32}{0}{3}
+\beamer@subsectionintoc {3}{3}{Complejidad Algor\IeC {\'\i }tmica}{37}{0}{3}
+\beamer@sectionintoc {4}{Resultados}{38}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones}{40}{0}{5}

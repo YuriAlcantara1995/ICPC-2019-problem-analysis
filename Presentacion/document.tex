@@ -1,0 +1,709 @@
+%CLASE DE DOCUMENTO: Presentación
+\documentclass[10pt,xcolor=tables,{dvipsnames}]{beamer}
+
+%PREAMBULO:
+\mode<presentation>{
+	\usetheme{Warsaw}
+	%  Here is a gallery with other themes:
+	%  http://deic.uab.es/~iblanes/beamer_gallery/
+	%  \usecolortheme[named=Sepia]{structure}
+	%  Others: OliveGreen, Brown, Sepia, RawSienna, 
+	%  \useoutertheme{shadow}
+	%Quitar iconos de navegacion
+	\setbeamertemplate{navigation symbols}{}
+	%Hace trasparente lo que hay en la misma diapositiva pero va a aparecer mas tarde
+	\setbeamercovered{transparent}
+	\setbeamercolor{block title example}{fg=white,bg=Blue}
+	\setbeamercolor{block body example}{fg=black,bg=Blue!10}
+	\setbeamercolor{postit}{fg=black,bg=OliveGreen!20}
+	\setbeamercolor{postit2}{fg=yellow,bg=OliveGreen}
+	%    \setbeamercolor{NEW_STYLE_NAME}{fg=COLOR_FOREGROUNG,bg=COLOR_BACKGROUNG}
+}
+\usepackage[ruled,vlined,lined,linesnumbered]{algorithm2e}
+\usepackage{multirow}
+\usepackage{epsfig}
+%\usepackage{float}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[spanish,es-tabla]{babel}
+
+%\usepackage[x11names,table]{xcolor}
+%\newtheorem{defi}{Definici\'on}
+%\newtheorem{teo}{Teorema}
+%\newtheorem{proposicion}{Proposici\'on}
+%\newtheorem{algoritmo}{Algoritmo}
+%\newtheorem{demostracion}{Demostraci\'on}
+
+%\addto\captionsspanish{%
+%\def\bibname{REFERENCIAS}%
+%\def\tablename{Tabla}%
+%}
+
+\usepackage{ragged2e}
+\usepackage{pdfpages}
+
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\newcommand{\de}{{\rm d}}
+
+\def\C{\mathbb C}
+%\newcommand{\se}{\Bbb S}
+\def\R{\mathbb R}
+%\def\se{\mathbb S}
+%\def\re{\mathbb R}
+\def\K{\mathbb K}
+\def\Z{\mathbb Z}
+\def\N{\mathbb N}
+\def\dim{\operatorname{dim}}
+\def\codim{\operatorname{codim}}
+\def\sign{\operatorname{sign}}
+\def\ct{\operatorname{\hbox{$c_t$}}}
+\def\nt{\operatorname{\hbox{$n_t$}}}
+\def\ot{\operatorname{\hbox{$o_t$}}}
+\def\At{\operatorname{\hbox{$A_t$}}}
+\def\ind{\operatorname{Ind}}
+
+%DECLARACIÓN DE PAQUETES:
+\usepackage{beamerthemesplit}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,%
+	shapes,positioning}
+
+%\thispagestyle{empty}
+
+%Paquetes para incluir graficos
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{multimedia}
+\graphicspath{{Imagenes/}}
+%Paquete para escribir en otro idioma distinto del o inglés. Este paquete traduce todos los textos estándar (“figure”,”chapter”,”section”,…) al idioma deseado:
+\usepackage[spanish]{babel}
+%Paquete para poder escribir los acentos de manera normal:
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\spanishdecimal{.} %Convierte el punto decimal en un punto (por defecto es una coma) en el modo matematico.
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+
+
+% COMANDOS NUEVOS:
+\newcommand{\re}{\Bbb R} %R: Conjunto de los números reales
+\newcommand{\se}{\Bbb S} %S de la circumferencia, esfera,...
+% De la misma forma se pueden definir comandos con argumentos. Por ejemplo, aquí definimos un comando para escribir el valor absoluto de algo más fácilmente.
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\norma}[1]{\left\Vert#1\right\Vert}
+\newcommand{\vv}[1]{\overrightarrow{v_{#1}}}
+
+%%% A NEW COMMAND TO FIX LOGO POSITION (x,y) in mm
+\newcommand{\MyLogo}{%
+	\begin{textblock}{14}(2.0,0.8)
+		%  \pgfuseimage{logo}
+		\includegraphics[height=0.925cm, angle=0]{UOWhite}
+	\end{textblock}
+}
+%%% A NEW COMMAND TO FIX LOGO POSITION (x,y) in mm
+
+\title[Final Mundial ICPC 2019 \hspace{8mm} \insertframenumber/\inserttotalframenumber]{Análisis de soluciones de problemas seleccionados de la Final Mundial del ICPC 2019.}
+\author[ \hspace{2.5cm} Yuri Alcántara Olivero]
+{\textbf{ {\large Yuri Alcántara Olivero}}}
+\institute
+{
+	{\Large\\[0.5cm]}
+	\textbf{ \normalsize Tutor:}\\[0.1cm]
+	\textbf{ {\normalsize M.Sc. Henry Blanco Lores.}}\\[1cm]
+	\textbf{ {\normalsize Universidad de Oriente}}
+}
+
+\date{Junio de 2019}
+\setcounter{tocdepth}{1}
+
+
+
+\begin{document}
+
+
+{
+ \setbeamercolor{background canvas}{bg=}
+ \includepdf{portada}
+}	
+	\section{Introducción}
+	
+	
+	\subsection{ICPC}
+	\begin{frame}
+		\MyLogo
+		\frametitle{ICPC}
+	 \begin{center}
+	 \includegraphics<1->[scale=0.33]{icpc}
+	 \end{center}	
+		
+	\end{frame}
+	
+	\begin{frame}
+		\MyLogo
+		\frametitle{Competencia}
+		\begin{center}
+			\includegraphics<1->[scale=0.35]{CompetitionArea}
+		\end{center}
+			
+		\onslide<1->{ 
+			\begin{columns}
+				\begin{column}{5cm}
+					\onslide<1->{
+						\begin{itemize}
+							
+				\item<1->  Teoría de Grafos. 				
+				\item<1-> Programación Dinámica. 
+     			\item<1-> Algoritmos Golosos.
+		\end{itemize}
+	}
+				\end{column}
+				\begin{column}{5cm}
+					\onslide<1->{
+						\begin{itemize}
+							\item<1-> Trabajo con Cadenas. 
+							\item<1-> Geometría Computacional.
+					        \item<1-> Estructuras de Datos.
+						\end{itemize} 
+						
+					}
+					
+				\end{column}
+			\end{columns}
+		}
+	\end{frame}
+    
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Ciclo 2018-2019}
+    	\begin{center}
+    				\includegraphics<1->[scale=0.6]{WFPorto}
+    	\end{center}
+    		\begin{columns}
+    			    	\begin{column}{5cm}
+    			    		\begin{block}{Ciclo 2018-2019}
+								\begin{itemize}
+									\item<1->  52000 Estudiantes 				
+									\item<1->  +3000 Universidades 
+									\item<1->  110 países
+								\end{itemize}
+    			    		\end{block}
+    			    		  			    	
+    			    	\end{column}
+    			    	\begin{column}{5cm}
+    			    		    		    		\begin{block}{Final Mundial ICPC 2019}
+    			    		    		    			\begin{itemize}
+    			    		    		    				\item<1-> 135 Equipos
+    			    		    		    				\item<1-> 405 estudiantes  
+    			    		    		    				\item<1-> 40 países    			    		    		    			    			
+    			    		    		    			\end{itemize}
+    			    		    		    		\end{block}
+    			    		    			    		  			    	
+      			    	\end{column}
+    			    \end{columns}
+    \end{frame}
+    
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Motivaciones}
+    	\onslide<1->{
+    		\begin{itemize}
+    			\item<1->  La participación en los eventos del ICPC complementa la formación del estudiante de Ciencia de la Computación.\\[0.5cm] 				
+    			\item<2-> Resulta de interés para la Universidad de Oriente ser representada en eventos de tal magnitud a nivel internacional.\\[0.5cm]
+    		   \item<3-> Lamentablemente el currículo base y optativo de la carrera no es suficiente para lograr la preparación necesaria.
+    		\end{itemize} 
+    	}
+    \end{frame}
+        \begin{frame}
+        	\MyLogo
+        	\frametitle{Motivaciones}
+        	\onslide<1->{
+        		\begin{itemize}
+        			\item<1->  Estas cuestiones fueron abordadas en un trabajo previo acerca de la Final Mundial ICPC 2018 pero la tendencia en estas competiciones es a ser cada vez más exigentes.\\[0.5cm] 
+        			\item<2-> Los participantes se ven obligados a mantener una constante actualización de los conocimientos en temas de programación competitiva y a resolver problemas cada vez más complejos.
+        		\end{itemize} 
+        	}
+        \end{frame}
+    
+    \subsection{Problema}
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Problema}
+        \begin{block}
+    	\large  La carencia de habilidades en los estudiantes de Ciencia de la Computación en temas de Programación Competitiva.
+    	\end{block}
+    \end{frame}	
+    
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Idea a defender}
+    \begin{block}
+    	\large  La creación de un solucionario de problemas de la Final Mundial ICPC 2019, favorece la preparación de los estudiantes de la carrera de Ciencia de la Computación y la participación en competencias de Programación Competitiva.
+    \end{block} 
+    			
+    \end{frame}
+    
+	\subsection{Objetivo General}
+	\begin{frame}
+		\MyLogo
+		\frametitle{Objetivo General}
+		\begin{block}
+			\large  Crear un solucionario detallado de una selección de problemas de la Final Mundial del ICPC 2019.
+		\end{block}
+	\end{frame}
+	
+	\subsection{Objetivos Específicos}
+	\begin{frame}
+		\MyLogo
+		\frametitle{Objetivos Específicos}
+		\onslide<1->{
+			\begin{enumerate}
+				\item<1->  Estudiar la teoría necesaria para ser capaz de comprender y programar la solución de los
+				problemas.\\[0.5cm] 				
+				\item<2-> Analizar la complejidad computacional de las soluciones propuestas.\\[0.5cm]
+				\item<3->  Implementar la correcta solución de los problemas.\\[0.5cm]
+				\item<4-> Describir detalladamente las soluciones a los problemas.\\[0.5cm]
+			\end{enumerate} 
+			
+		}
+	\end{frame}
+\begin{frame}
+	\MyLogo
+	\frametitle{Índice}
+	\onslide<1->{
+		\begin{enumerate}
+			\item<1-> Problema A. Azulejos.\\[0.3cm]
+			\item<1-> Problema B. Beatiful Bridges.\\[0.3cm]			
+			\item<1-> {\bf Problema D. Circular DNA.}\\[0.3cm]
+			\item<1-> {\bf Problema E. Dead End Detector.}\\[0.3cm]  				
+			\item<1-> Problema G. First of Her Name.\\[0.3cm]
+			\item<1-> Problema H. Hobson's Train.\\[0.3cm]
+			\item<1-> Conclusiones.\\[0.3cm]
+		    \item<1-> Recomendaciones.
+		\end{enumerate} 	
+	}
+\end{frame}			
+
+\section{Problema E. Dead End Detector}
+	\subsection{Descripción}
+	\begin{frame}
+		\MyLogo
+		\frametitle{Problema E. Dead End Detector}
+		\begin{columns}
+			\begin{column}{5cm}
+				\begin{center}
+   				\includegraphics<1->[scale=0.36]{Ciudad1}\\
+   				\end{center}
+
+			\end{column}
+			\begin{column}{5cm}
+				\begin{center}
+   				\includegraphics<1->[scale=0.8]{DeadEnd}
+   				\end{center}
+			\end{column}
+		\end{columns}
+		
+		\begin{block}{Descripción}
+			\justifying
+			En el problema básicamente describen una ciudad con varias localidades y calles que las conectan. Se
+			nos pide colocar de manera correcta ciertas señales de calle sin salida, pero además identificar las señales
+			redundantes para ahorrar recursos evitando colocarlas.
+		\end{block}
+
+	\end{frame}
+	\begin{frame}
+		\MyLogo
+		\frametitle{Problema E. Dead End Detector}
+				\begin{block}{}
+					V:Conjunto de nodos (localidades).\\
+					N = $|V|$\\[0.5cm]
+					E: Conjunto de arista (calles).\\
+					M = $|E|$\\[0.5cm]
+					Calle sin salida: Relación CSS(v,e)$\ v \in V,e \in E \;\backslash\;$ después de entrar en e por v no es posible volver a v sin hacer un giro en U.\\[0.5cm]
+					CSS(v,e) redundante: Si existe CSS(v1,e1), $v1 \in V$ y $e1 \in E$ tal que después de entrar a e1 por v1 se puede llegar a e entrando por v.
+				\end{block}
+				 
+	\end{frame}
+	
+		\begin{frame}
+			\MyLogo
+			\frametitle{Problema E. Dead End Detector}
+			\begin{center}
+				\includegraphics<1->[scale=0.5]{GraphDescription1}
+			\end{center}
+			
+		\end{frame}
+	
+	\subsection{Solución}	
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Caso árbol}
+    	
+    	\begin{columns}
+    		\begin{column}{5cm}
+    			\includegraphics<1->[scale=0.6]{TreeDescription1}	
+    			%\large \\[3.5cm]
+           \end{column}
+    		\begin{column}{5cm}
+    			\begin{block}{Proposición}
+    				En un árbol todas las aristas tienen señal de CSS en ambos extremos
+    			\end{block}
+    			\large \\[1cm]
+    			\includegraphics<1->[scale=0.45]{TodasCSS1}
+	    		\end{column}
+	    	\end{columns}
+		    \end{frame}
+        \begin{frame}
+        	\MyLogo
+        	\frametitle{Caso árbol}
+        	\begin{columns}
+        		\begin{column}{5cm}
+        			\includegraphics<1->[scale=0.6]{TreeDescription2}	
+        			%\large \\[3.5cm]
+        			
+        		\end{column}
+        			\begin{column}{5cm}
+        				\begin{block}{Proposición}
+        					Si CSS(v,e) es redundante ssi v no es un nodo colgante.					
+        				\end{block}
+        				\large \\[0.1cm]
+        				\includegraphics<1->[scale=0.35]{Redundancia1}
+        				\large \\[0.1cm]
+        				\includegraphics<1->[scale=0.45]{NoHojaRedundante1}
+        			\end{column}
+               	\end{columns}
+               	\begin{block}{Solución}
+               		Todas las aristas incidentes en nodos colgantes con señal en dicho nodo.
+               	\end{block}
+        \end{frame}
+        
+        \begin{frame}
+        	\MyLogo
+        	\frametitle{Caso no árbol (al menos un ciclo)}
+        	\begin{block}{}
+        		Si la arista (v,u) tiene una señal de CSS en v entonces al quitarla se divide el grafo en dos componentes conexas y la componente que contiene a u es un árbol.
+        	\end{block}
+        	\hspace{1cm}\\[0.1cm]
+        	\includegraphics<1->[scale=0.5]{ContradiccionCiclo1}	
+        \end{frame}
+        
+         
+         \begin{frame}
+         	\MyLogo
+         	\frametitle{Caso no árbol (al menos un ciclo)}
+         	        	\begin{block}{Algoritmo}
+         	        			{\bf Mientras} $\exists \;v\in G \;\backslash \;\; grado(v) = 1\;$ {\bf Hacer}\\
+         	        			\hspace{0,5cm} Eliminar v de G\\
+         	        			{\bf Fin Mientras}\\	
+         	        \end{block}	
+         	\begin{block}{Proposición}
+         		El algoritmo elimina de G todas las aristas con señal de CSS. 
+         	\end{block}
+         	\includegraphics<1->[scale=0.48]{ContradiccionArbolDeadEnd1}	
+         \end{frame}
+        
+        \begin{frame}
+        	\MyLogo
+        	\frametitle{Caso no árbol (al menos un ciclo)}
+        	\begin{block}{Algoritmo}
+        			{\bf Mientras} $\exists \;v\in G \;\backslash \;\; grado(v) = 1\;$ {\bf Hacer}\\
+        			\hspace{0,5cm} Eliminar v de G\\
+        			{\bf Fin Mientras}\\	
+        	\end{block}         	
+        	\begin{block}{Proposición}
+        		El algoritmo no elimina de G aristas que no contengan señal de CSS. 
+        	\end{block}
+        	\includegraphics<1->[scale=0.55]{NoEliminaAristas1}	
+        \end{frame}
+        
+         \begin{frame}
+         	\MyLogo
+         	\frametitle{Caso no árbol (al menos un ciclo)}
+         	\begin{block}{Conclusión parcial}
+         		Solamente las aristas eliminadas por el algoritmo contienen señal de CSS.
+         	\end{block}
+         	\begin{block}{Proposición}
+Una señal de CSS en una arista entre dos nodos v y u eliminados por el algoritmo es redundante.
+         	\end{block}
+         	\includegraphics<1->[scale=0.55]{NodosEliminadosRedundantes1}
+         	\begin{block}{Solución}
+         		Las aristas (v,u) con señal de CSS en v tal que u fue eliminado y v no.
+         	\end{block}	
+         \end{frame}
+         
+	\subsection{Complejidad Algorítmica}
+	         
+	         \begin{frame}
+	         	\MyLogo
+	         	\frametitle{Complejidad Algorítmica}
+	         	\begin{block}{Restricciones}
+		         	$1 \leq N \leq 5\cdot10^5$\hspace{1cm}
+		         	$1 \leq M \leq 5\cdot10^5$\\
+		            Tiempo L\'imite: 5 segundos \hspace{1cm}  Memoria L\'imite: 1Gb
+	         	\end{block}	
+	         	\begin{block}{Complejidad Temporal}
+	         		$O(N + M)$\\
+	         		peor caso:$\; 2 \cdot 5\cdot 10^5 = 10^6 < 5\cdot 10^8$
+	         	\end{block}
+	         	\begin{block}{Complejidad Espacial}
+	         		$O(N + M)$\\
+	         		peor caso:$\; 2 \cdot 5\cdot 10^5 = 10^6\\ 
+	         		10^6\cdot 4 \;bytes < 10^9 bytes$
+	         	\end{block}
+	         \end{frame}
+	         
+\section{Problema D. Circular DNA}
+   	\subsection{Descripción}
+     
+         	
+    	    	\begin{frame}
+    	    		\MyLogo
+    	    		\frametitle{Problema D. Circular DNA}
+    	    		\begin{center}
+    	    		\includegraphics<1->[scale=0.1]{DNAFoto}
+    	    		\end{center}
+    	    		\begin{block}{Descripción}
+    	    			\justifying
+    	    			Una cadena simple de ADN está compuesta por varios genes que se clasifican en distintos tipos identificados por un marcador (un entero i). Después de cierto trabajo de investigación, cada cadena de genes de tipo i se reduce solamente a marcadores iniciales $s_i$ y finales $e_i$.    
+    	    		\end{block} 
+    	    	\end{frame}
+    	    	
+    
+       	    	\begin{frame}
+       	    		\MyLogo
+       	    		\frametitle{Problema D. Circular DNA}
+      	    		\begin{block}{Anidamiento Apropiado}
+       	    		  \begin{itemize}
+       	    		  	\item $s_ie_i$
+       	    		  	\item $s_i\;A\;e_i$\hspace{0,5cm}  A está anidada apropiadamente
+       	    		  	\item $AB$ \hspace{0,8cm} A y B están anidadas apropiadamente
+       	    		  \end{itemize}
+      	    		\end{block}
+      	    		       	\begin{block}{Ejemplos de cadenas anidadas apropiadamente}
+      	    		       		$s_i \; s_i \; e_i \; e_i $\hspace{1cm}$s_i \; e_i \; s_i \; e_i$\hspace{1cm}$s_i \; s_i \; e_i \; s_i \; e_i \; e_i$
+      	    		       	\end{block}
+      	    		       	\begin{block}{Ejemplos de cadenas no anidadas apropiadamente}
+      	    		       		$e_i \; s_i $\hspace{1cm}$s_i \; e_i \; e_i \; s_i$
+      	    		       	\end{block}
+       	    	\end{frame}
+    	
+     
+   	\begin{frame}
+   		\MyLogo
+   		\frametitle{Problema D. Circular DNA}
+	   	\begin{center}
+	     	\includegraphics<1->[scale=0.38]{DNA}
+	   	\end{center}
+
+   		\begin{block}{Observación}
+             Que una cadena de un tipo determinado de gen esté anidada apropiadamente o no depende en gran medida de la posición donde se realice el corte.
+   		\end{block}	
+   	\end{frame}
+   	
+   	   	\begin{frame}
+   	   		\MyLogo
+   	   		\frametitle{Problema D. Circular DNA}
+   	   		\begin{block}{Ejemplos de corte}
+   	   			\begin{columns}
+   	   				\begin{column}{5cm}
+   	   					Corte en la posición 3\\[0.1cm]
+   	   					$s_1 \; s_1 \; e_1 \; s_1 \; e_1 \; e_1$\\[0.05cm]
+   	   					$e_2 \; s_2$\\[0.05cm]
+   	   					$e_{42}$
+   	   				\end{column}
+   	   				\begin{column}{5cm}
+   	   					Corte en la posición 5\\[0.1cm]
+   	   					$s_1 \; e_1 \; s_1 \; e_1 \; e_1 \; s_1$\\[0.05cm]
+   	   					$s_2 \; e_2$\\[0.05cm]
+   	   					$e_{42}$
+   	   				\end{column}
+   	   				
+   	   			\end{columns}
+   	   		\end{block}
+   	   	\begin{block}{Problema}
+   	   		Encontrar la posición para el corte que garantice que la mayor cantidad de tipos de genes muestren cadenas anidadas apropiadamente.
+   	   	\end{block}	
+   	   	\end{frame}
+   	   	
+   	\subsection{Solución}
+   	        \begin{frame}
+   	        	\MyLogo
+   	        	\frametitle{Solución}
+   	        \begin{center}
+   	        	\includegraphics<1->[scale=0.5]{IntervalosCorte}	
+   	        \end{center}
+   	    \begin{block}{Solución}
+   	    	La posición contenida en la mayor cantidad de intervalos.
+   	    \end{block}
+       \end{frame}
+       \begin{frame}
+       	\MyLogo
+       	\frametitle{Solución}
+       	\begin{block}{Definiciones}
+        $I = \{\; [l_j, r_j] \;\}$\\
+        A: Arreglo de enteros\\
+        $AA_k = \sum_{j=0}^{k} \; A_j$
+       	\end{block}
+       		\begin{block}{}
+       			$\forall j \in \N\; A_j = 0$\\
+       			Para cada $[l_j, r_j] \in \; I$\\
+       			$\;\; A_{lj} = A_{lj} + 1$\\
+       			$\;\; A_{rj + 1} = A_{rj + 1} - 1$
+       		\end{block}
+       \end{frame}
+       
+       \begin{frame}
+       	\MyLogo
+       	\frametitle{Solución}
+       	\begin{block}{}
+       		$AA_k$ = Cantidad de intervalos que comienzan en una posición $\leq k$\\
+       		\hspace{5cm}$-$\\
+       		\hspace{1.2cm}Cantidad de intervalos que terminan en una posición $<k$\\
+       		\hspace{5cm}$=$\\
+       		\hspace{1.2cm}Cantidad de Intervalos que contienen la posición k
+       	\end{block}
+       	
+       	\begin{block}{Solución}
+       		La posición k tal que $AA_k$ sea máximo.
+       	\end{block}
+       \end{frame}
+       
+       
+
+        \begin{frame}
+           	\MyLogo
+           	\frametitle{Solución}
+       \begin{columns}
+       	\begin{column}{2cm}
+			  \begin{itemize}
+			  	\item $s_ie_i$
+			  	\item $s_i\;A\;e_i$
+			  	\item $AB$
+			  \end{itemize}
+       	\end{column}
+       	\begin{column}{8cm}
+       	\begin{block}{Ejemplos de cadenas anidadas apropiadamente}
+       	       $s_i \; s_i \; e_i \; e_i $\hspace{1cm}$s_i \; e_i \; s_i \; e_i$\hspace{1cm}$s_i \; s_i \; e_i \; s_i \; e_i \; e_i$
+         \end{block}
+	     \begin{block}{Ejemplos de cadenas no anidadas apropiadamente}
+               $e_i \; s_i $\hspace{1cm}$s_i \; e_i \; e_i \; s_i$
+         \end{block}
+       	       	
+       	\end{column}
+
+       \end{columns}
+		\begin{center}
+        	 \includegraphics<1->[scale=0.65]{Contador}
+		\end{center}
+       \end{frame}
+       
+              \begin{frame}
+               	\MyLogo
+               	\frametitle{Solución}
+               	\begin{columns}
+                      \begin{column}{5cm}
+               		\includegraphics<1->[scale=0.5]{CadenaDuplicada}
+                      \end{column}      
+                      \begin{column}{5cm}
+            \begin{block}{Solución}
+            	Para cada intervalo [j, j + $N_i$ - 1]  comprobamos que el mínimo valor del contador en ese intervalo menos el valor de la posición j-1 es 0. 
+            \end{block}                      
+            \end{column}      
+               	\end{columns}
+            \begin{block}{Solución}
+            Para obtener el mínimo valor en un intervalo de manera eficiente se puede usar alguna estructura de
+            	datos como Segment Tree o Range Minimum Query. 
+            \end{block}
+               \end{frame}
+
+   	\subsection{Complejidad Algorítmica}
+   		         \begin{frame}
+   		         	\MyLogo
+   		         	\frametitle{Complejidad Algorítmica}
+   		         	\begin{block}{Restricciones}
+   		         		$1 \leq N \leq 10^6$ es la longitud de la cadena\\
+   		         		$1 \leq i \leq 10^6$ donde i son los tipos de marcadores\\
+			            Tiempo L\'imite: 3 segundos \hspace{1cm}  Memoria L\'imite: 1Gb
+   		         		
+   		         	\end{block}	
+   		         	\begin{block}{Complejidad Temporal}
+   		         		$O(N\; log\; N)$\\
+   		         		peor caso: $20 \cdot 10^6 = 2\cdot 10^7 < 3\cdot 10^8$
+   		         	\end{block}
+	   		         \begin{block}{Complejidad Espacial}
+   		         	     $O(N\; log\; N)$\\
+   		         	     peor caso: $20 \cdot 10^6 \cdot 4 \;bytes = 8\cdot 10^7 \;bytes < 10^9 \;bytes$ 
+	   		         \end{block}
+   		         
+   		         \end{frame}
+\section{Resultados}
+    \begin{frame}
+    	\MyLogo
+    	\frametitle{Resultados}
+        \begin{columns}
+             \begin{column}{6cm}
+	      		\includegraphics<1->[scale=0.115]{Medallas}
+             \end{column} 
+             \begin{column}{6cm}
+		   		\includegraphics<1->[scale=0.06]{Limitless}
+             \end{column}   
+        \end{columns}
+    \end{frame} 
+    
+     \begin{frame}
+     	\MyLogo
+     	\frametitle{Resultados}
+     	\begin{center}
+	     	\includegraphics<1->[scale=0.45]{Mencion}
+     	\end{center}
+     \end{frame} 		         
+    
+\section{Conclusiones}
+   
+   \begin{frame}
+   	\MyLogo
+   	\frametitle{Conclusiones}
+   	\begin{itemize}
+   		\item<1->  Se le dio solución a 6 de los problemas de la Final Mundial ICPC 2019.\\[0.5cm]
+   		\item<2-> Se demostraron las proposiciones empleadas para las soluciones.\\[0.5cm]
+   		\item<3-> Se analizó la complejidad computacional de cada solución propuesta.\\[0.5cm]
+   		\item<4-> Se implementaron correctamente las soluciones planteadas a cada uno de los problemas.
+   	\end{itemize}
+   \end{frame}
+   
+      \begin{frame}
+      	\MyLogo
+      	\frametitle{Conclusiones}
+      	\begin{itemize}
+      		\item<1-> Los códigos fueron aceptados en el juez en línea Kattis donde se encuentran disponibles los problemas de las Finales Mundiales efectuadas (https://icpc.kattis.com/problems).\\
+      	\end{itemize}
+      	\hspace{-0.6cm}\includegraphics<1->[scale=0.34]{Kattis}
+      \end{frame}   
+ 
+ \begin{frame}
+ 	\MyLogo
+ 	\frametitle{Recomendaciones}
+ 	\begin{itemize}
+ 		\item<1->  Garantizar la disponibilidad de trabajos como el presente en entornos virtuales que permitan el acceso de los estudiantes de la carrera Ciencia de la Computación.\\[0.5cm]
+ 		\item<2->  Orientar a los estudiantes en el uso de jurados en línea donde puedan enviar sus propias soluciones y compararlas con las propuestas anteriormente.\\[0.5cm]
+ 		\item<3-> Fomentar la participación de los estudiantes en un curso optativo de programación competitiva.
+ 	\end{itemize}
+ \end{frame}     
+
+	{
+		\setbeamercolor{background canvas}{bg=}
+		\includepdf{portada}
+	}
+			
+			
+		\end{document}

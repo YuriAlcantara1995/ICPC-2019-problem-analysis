@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2020.5.4)  4 MAY 2020 15:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2020.5.4)  4 MAY 2020 15:39
 entering extended mode
 **informe-YAO-PL-2018.tex
-(E:\Tesis\Informe\Informe\informe-YAO-PL-2018.tex
+
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -440,7 +442,9 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 \@indexfile=\write3
 
 Writing index file informe-YAO-PL-2018.idx
-(E:\Tesis\Informe\Informe\informe-YAO-PL-2018.aux)
+
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
@@ -457,11 +461,9 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
 LaTeX Font Info:    ... okay on input line 83.
 \AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring OFF on input line 83.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/07/31 v2.42 Cross-referencing by name of section
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count134
@@ -470,11 +472,12 @@ LaTeX Info: Redefining \ref on input line 83.
 LaTeX Info: Redefining \pageref on input line 83.
 LaTeX Info: Redefining \nameref on input line 83.
 
-(E:\Tesis\Informe\Informe\informe-YAO-PL-2018.out)
-(E:\Tesis\Informe\Informe\informe-YAO-PL-2018.out)
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.out)
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.out)
 \@outlinefile=\write4
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count135
 \scratchdimen=\dimen137
@@ -517,8 +520,8 @@ Package pdftex.def Info: imagenes/portada.pdf, page1 used on input line 85.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1
 
- <E:/Tesis/Informe/Informe/imagenes/portada.pdf{C:/ProgramData/MiKTeX/2.9/pdfte
-x/config/pdftex.map}>]
+ <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagenes/p
+ortada.pdf{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}>]
 Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
@@ -529,10 +532,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
 ] [4
 
-] (E:\Tesis\Informe\Informe\informe-YAO-PL-2018.toc
+]
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
@@ -691,7 +695,8 @@ Package pdftex.def Info: imagenes/Azulejos.jpg used on input line 372.
 (pdftex.def)             Requested size: 71.1401pt x 94.8535pt.
  [8
 
- <E:/Tesis/Informe/Informe/imagenes/Azulejos.jpg>]
+ <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagenes/A
+zulejos.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
@@ -757,7 +762,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--590
 
  []
 
-[13 <E:/Tesis/Informe/Informe/imagenes/Bridge.jpg>]
+[13 <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagene
+s/Bridge.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 612--615
 
  []
@@ -801,7 +807,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--788
 
  []
 
-[17 <E:/Tesis/Informe/Informe/imagenes/DNA.jpg>]
+[17 <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagene
+s/DNA.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 789--793
 
  []
@@ -823,7 +830,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 930--937
 
  []
 
-[21 <E:/Tesis/Informe/Informe/imagenes/DeadEnd.jpg>]
+[21 <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagene
+s/DeadEnd.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 938--942
 
  []
@@ -862,7 +870,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1332--1337
 
  []
 
-[30 <E:/Tesis/Informe/Informe/imagenes/Train.jpg>] [31] [32] [33]
+[30 <C:/Yuri/PRODUCCION/GitHub/Tesis/ICPC-2019-problem-analysis/Informe/imagene
+s/Train.jpg>] [31] [32] [33]
 Underfull \hbox (badness 10000) in paragraph at lines 1466--1467
 
  []
@@ -882,7 +891,9 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1532.
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1532.
- (E:\Tesis\Informe\Informe\informe-YAO-PL-2018.aux)
+
+(C:\Yuri\PRODUCCION\GitHub\Tesis\ICPC-2019-problem-analysis\Informe\informe-YAO
+-PL-2018.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1532.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1532.
 
@@ -892,7 +903,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1532.
  ) 
 Here is how much of TeX's memory you used:
  12632 strings out of 493921
- 181123 string characters out of 3144856
+ 181669 string characters out of 3144856
  492892 words of memory out of 3000000
  14892 multiletter control sequences out of 15000+200000
  21753 words of font info for 57 fonts, out of 3000000 for 9000
@@ -944,7 +955,7 @@ r/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/s
 frm2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfti
 1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sftt080
 0.pfb>
-Output written on informe-YAO-PL-2018.pdf (42 pages, 1177582 bytes).
+Output written on informe-YAO-PL-2018.pdf (42 pages, 1177632 bytes).
 PDF statistics:
  1510 PDF objects out of 1728 (max. 8388607)
  871 named destinations out of 1000 (max. 500000)
